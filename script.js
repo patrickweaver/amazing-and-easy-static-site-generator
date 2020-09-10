@@ -2,6 +2,8 @@ var c = document.getElementById("static");
 var ctx = c.getContext("2d");
 var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+c.width = vw;
+c.height = vh;
 
 for (var i = 0; i < vw; i++) {
   for (var j = 0; j < vh; j++) {
